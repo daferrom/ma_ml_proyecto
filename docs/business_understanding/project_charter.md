@@ -1,8 +1,7 @@
 # Project Charter - Entendimiento del Negocio
 
-## Nombre del Proyecto
+## Clasificación de imagenes satelitales por uso de suelo
 
-Clasificación de imagenes satelitales por uso de suelo
 
 ## Objetivo del Proyecto
 
@@ -90,7 +89,8 @@ Conjunto de Datos: Se utilizará un conjunto de datos de imágenes aéreas prepr
 * Redimensionamiento: Asegurarse de que las imágenes tengan dimensiones uniformes (224x224) para ser compatibles con el modelo EfficientNetB0.
 
 * Aumento de Datos (Data Augmentation): Para evitar sobreajuste y mejorar la generalización, se emplearán técnicas de aumento de datos como rotación, cambio de escala, traslación, entre otras, para aumentar la diversidad de las imágenes en el conjunto de entrenamiento.
-Fase 3: Exploración y Análisis de Datos (EDA)
+
+#### Fase 3: Exploración y Análisis de Datos
 
 #### Exploración Visual:
 
@@ -131,35 +131,24 @@ Si algunas clases tienen un rendimiento significativamente peor, el equipo de da
 
 Colaboración: Todos los miembros del equipo revisarán los resultados, discutiendo las posibles áreas de mejora y colaborando en la selección de ajustes a realizar.
 
-#### Fase 6: Implementación y Monitoreo
-Despliegue del Modelo:
-
-Si los resultados son satisfactorios, el modelo se desplegará en un entorno de producción o en una aplicación de visualización para que los usuarios finales puedan realizar predicciones sobre nuevas imágenes.
-Monitoreo:
-
-Después del despliegue, el modelo será monitoreado de cerca para asegurarse de que continúe funcionando correctamente a medida que se recopilan nuevos datos.
-Se implementará un sistema de retroalimentación para actualizar el modelo con nuevos datos etiquetados si es necesario.
-
-Colaboración: Los ingenieros de infraestructura se encargarán del despliegue y monitoreo continuo del modelo, mientras que el equipo de científicos de datos realizará ajustes según sea necesario.
-
-
+Despliegue del Modelo como modelo descargable.
 
 ## Cronograma
 
 | Etapa | Duración Estimada | Fechas |
 |------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
+| Entendimiento del negocio y carga de datos (fase 1 y 2) | 1 semanas | 21  al 28 de Noviembre |
+| Preprocesamiento, análisis exploratorio (fase 3)| 1 semanas | del 29 de Noviembre al 5 de diciembre |
+| Modelado ,entrenamiento y fine tuning (fase 4)| 1 semanas | del 6 de al 12 de Diciembre |
+| Evaluación , despliegue y  entrega final (fase 5) | 1 semanas | del 13 de Diciembre al 21 de Diciembre |
 
 Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
 
 ## Equipo del Proyecto
 
 - [Diego Alejandro Ferro Martínez del líder del proyecto]
-- [*Por definir y cargo de los miembros del equipo]
+- [*Por definir / cargo]
+- [*Por definir / cargo]
 
 Roles en el Equipo:
 Científicos de Datos: Responsable del desarrollo y ajuste del modelo, implementación de métricas, y análisis de los resultados.
@@ -211,6 +200,10 @@ Este enfoque estructurado y colaborativo asegura que el modelo de clasificación
 
 ## Aprobaciones
 
-- [Nombre y cargo del aprobador del proyecto]
+- [Prof Oscar Bustos Project Manager]
+
+
 - [Firma del aprobador]
-- [Fecha de aprobación]
+
+
+- 28 de Noviembre de 2024
