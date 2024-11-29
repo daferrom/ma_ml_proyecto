@@ -1,6 +1,8 @@
 **/*__pycache__/*
 *.env
 venv/
+data/
 env_vars*
 credentials*
+.DS_Store
 **/build/*

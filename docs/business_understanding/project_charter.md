@@ -194,13 +194,27 @@ Este enfoque estructurado y colaborativo asegura que el modelo de clasificación
 
 ## Stakeholders
 
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
+- Prof.Oscar Bustos / Delivery manager
+- Jorge Camargo / Project manager
+
+### Relación con los stakeholders:
+
+- Delivery manager:
+
+    * Seguimiento de entregas. El delivery manager se asegurará Asegurarse de que el trabajo del equipo de ciencia de datos (incluyendo la preparación de datos, modelado y evaluación) avance según lo planeado.
+
+    * Comunicación con stakeholders: Proporcionar retroalimentación continua a las partes interesadas, informando sobre el progreso y asegurándose de que los entregables cumplan con los plazos establecidos.
+
+    * Gestión de recursos y riesgos: Asegurar que los recursos estén disponibles y gestionar posibles riesgos que puedan retrasar la entrega de los resultados o los modelos.
+
+- Project Manager:
+    * Dar linemiento generales de objetivos y alcance:
+    * Dar lineamiento de aplicación  de metodologías ágiles o específicas de ciencia de datos (Team Data Science Process) para garantizar que el proyecto se ejecute de manera eficiente.
+    * Identificación áreas de mejora en la ejecución del proyecto y asegurándose de que el equipo de datos esté aprendiendo y mejorando con cada iteración
 
 ## Aprobaciones
 
-- [Prof Oscar Bustos Project Manager]
+- Diego Alejandro Ferro Martínez del líder del proyecto
 
 
 - [Firma del aprobador]
