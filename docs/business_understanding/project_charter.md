@@ -48,7 +48,7 @@ Etiquetado:
 Cada imagen está etiquetada con una única categoría, lo que permite un problema de clasificación multiclase.
 
 
-#### Resultados espereados 
+#### Resultados esperados
 
 Se espera poder evaluar ls resultados de una red neuranl convolucional en relación con el pasado resultado de Efficentnet con transfer learning con las siguientes métricas de desempeño:
 
