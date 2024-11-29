@@ -1,10 +1,16 @@
-# Team Data Science Project Template
+# Team Data Science Project / Clasificación de imagenes satelitales por uso de suelo
 
-Esta plantilla es una implementación de la plantilla de proyecto de Team Data Science Process que actualmente se utiliza en el "Programa de Formación en Machine Learning y Data Science" en la Universidad Nacional de Colombia.
+# Proyecto: Análisis del UCMerced Land Use Dataset
 
-Esta plantilla proporciona las siguientes carpetas y archivos:
+Este proyecto tiene como objetivo analizar el **UCMerced Land Use Dataset**, un conjunto de imágenes utilizado para la clasificación de uso del suelo. El flujo de trabajo incluye la adquisición de datos, el procesamiento y la exploración de técnicas de Machine Learning para tareas de clasificación.
 
-* `src`: acá debe ir el código o implementación del proyecto en Python.
-* `docs`: en esta carpeta se encuentran las plantillas de los documentos definidos en la metodología.
-* `scripts`: esta carpeta debe contener los scripts/notebooks que se ejecutarán.
-* `pyproject.toml`: archivo de definición del proyecto en Python.
+## Estructura del Proyecto
+
+WIP
+
+## Requisitos
+
+Asegúrate de tener instalado un entorno virtual y las dependencias del proyecto. Para instalar las dependencias, ejecuta el siguiente comando:
+
+```bash
+pip3 install -r requirements.txt
