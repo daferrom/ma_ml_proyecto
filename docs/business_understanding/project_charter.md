@@ -161,8 +161,6 @@ Este enfoque estructurado y colaborativo asegura que el modelo de clasificación
 
 ## Presupuesto
 
-# Presupuesto Detallado para Proyecto de Clasificación de Imágenes Aéreas
-
 ### Duración del Proyecto: 4 semanas
 
 | **Concepto**               | **Descripción**                                                                | **Costo Estimado (COP)** |
@@ -195,7 +193,7 @@ Este enfoque estructurado y colaborativo asegura que el modelo de clasificación
 ## Stakeholders
 
 - Prof.Oscar Bustos / Delivery manager
-- Jorge Camargo / Project manager
+- Prof. Jorge Camargo / Project manager
 
 ### Relación con los stakeholders:
 
