@@ -206,7 +206,7 @@ Este enfoque estructurado y colaborativo asegura que el modelo de clasificación
     * Gestión de recursos y riesgos: Asegurar que los recursos estén disponibles y gestionar posibles riesgos que puedan retrasar la entrega de los resultados o los modelos.
 
 - Project Manager:
-    * Dar linemiento generales de objetivos y alcance:
+    * Dar lineqmientow generales de objetivos y alcance:
     * Dar lineamiento de aplicación  de metodologías ágiles o específicas de ciencia de datos (Team Data Science Process) para garantizar que el proyecto se ejecute de manera eficiente.
     * Identificación áreas de mejora en la ejecución del proyecto y asegurándose de que el equipo de datos esté aprendiendo y mejorando con cada iteración
 
