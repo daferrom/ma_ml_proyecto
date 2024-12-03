@@ -61,7 +61,7 @@ Se espera poder evaluar ls resultados de una red neuranl convolucional en relaci
 
 ### Excluye:
 
-- Despliegue del pmodelo como API web
+- Despliegue del modelo como API web
 
 ## Metodología
 
@@ -146,9 +146,8 @@ Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse d
 
 ## Equipo del Proyecto
 
-- [Diego Alejandro Ferro Martínez del líder del proyecto]
-- [*Por definir / cargo]
-- [*Por definir / cargo]
+- Diego Alejandro Ferro Martínez líder del proyecto / Cientifico de Datos / Ing de Dato / Ingeniero ML
+- Luis Armando Cruz Contreras / Cientifico de Datos / Ing de Dato / Ingeniero ML
 
 Roles en el Equipo:
 Científicos de Datos: Responsable del desarrollo y ajuste del modelo, implementación de métricas, y análisis de los resultados.
@@ -206,7 +205,7 @@ Este enfoque estructurado y colaborativo asegura que el modelo de clasificación
     * Gestión de recursos y riesgos: Asegurar que los recursos estén disponibles y gestionar posibles riesgos que puedan retrasar la entrega de los resultados o los modelos.
 
 - Project Manager:
-    * Dar lineqmientow generales de objetivos y alcance:
+    * Dar lineamientos generales de objetivos y alcance:
     * Dar lineamiento de aplicación  de metodologías ágiles o específicas de ciencia de datos (Team Data Science Process) para garantizar que el proyecto se ejecute de manera eficiente.
     * Identificación áreas de mejora en la ejecución del proyecto y asegurándose de que el equipo de datos esté aprendiendo y mejorando con cada iteración
 
