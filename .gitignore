@@ -5,4 +5,4 @@ env_vars*
 credentials*
 .DS_Store
 **/build/*
-/data
+/data/*
