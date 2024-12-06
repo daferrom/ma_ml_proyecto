@@ -65,7 +65,8 @@ def  generate_dataframe(data, images, image_names):
     plt.xlabel("Valor")
     plt.ylabel("Frecuencia")
     plt.legend()
-    plt.show()
+    plt.savefig('../../docs/data/contraste_brillo.png')
+    plt.close()
 
 """
     Distribución de tonalidades (Hue)
@@ -80,7 +81,8 @@ def tones_distribution(images):
     plt.title("Distribución de Tonalidades (Hue) - Dataset Completo")
     plt.xlabel("Tonalidad")
     plt.ylabel("Frecuencia")
-    plt.show()
+    plt.savefig('../../docs/data/distribucion_tonalidades.png')
+    plt.close()
 
 
 def execute(dataset_path):

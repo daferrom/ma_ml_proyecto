@@ -54,7 +54,8 @@ def counter_image_class(dataset_path):
     plt.xlabel('Clases')
     plt.ylabel('Número de imágenes')
     plt.title('Distribución de imágenes por clase')
-    plt.show()
+    plt.savefig('../../docs/data/distribucion_clases.png')
+    plt.close()
 
 
 def execute(dataset_path):

@@ -10,6 +10,20 @@ import visual_metrics
 """
 
 dataset_path = '..\\..\\data\\raw_data\\UCMerced_LandUse\\Images'
-
+"""
+    entrada: dataset_path path de la ruta que contiene las imagenes
+    salida: 
+        - Total de imagenes en el dataset
+        - Formato de las imagenes
+        - Clases de las imagenes
+"""
 structural_metrics.execute(dataset_path)
+
+"""
+    entrada: dataset_path path de la ruta que contiene las imagenes
+    salida: 
+        - Total de imagenes en el dataset
+        - Imagen de distribución de contrastes y brillos en la carpeta data
+        - Imagen de distribución de tonalidades en la carpeta data
+"""
 visual_metrics.execute(dataset_path)
