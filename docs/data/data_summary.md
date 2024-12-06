@@ -145,9 +145,11 @@ Al analizar la gráfica de la distribución de tonalidades (Hue) para el conjunt
 ## Implicaciones y Posibles Usos
 
 ### 1. **Segmentación y Clasificación**
+
    - La multimodalidad de la distribución sugiere que las imágenes podrían agruparse en diferentes clases o categorías en función de sus tonalidades predominantes.
 
 ### 2. **Detección de Anomalías**
+
    - Las tonalidades en los valles de la distribución podrían indicar imágenes atípicas o con características inusuales.
 
 ---
