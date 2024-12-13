@@ -12,6 +12,11 @@ Imágenes aéreas: Las imágenes de entrada son preprocesadas para unificar su t
 Etiquetas de clase: ['runway', 'agricultural', 'golfcourse', 'chaparral', 'beach', 'parkinglot', 'sparseresidential', 'denseresidential', 'harbor', 'forest', 'buildings', 'mobilehomepark', 'overpass', 'river', 'storagetanks', 'mediumresidential', 'freeway', 'intersection', 'baseballdiamond', 'tenniscourt', 'airplane']
 
 
+* input_shape: Tamaño de las imágenes de entrada.
+* num_classes: Número de clases en la clasificación.
+* train_dataset: Conjunto de datos de entrenamiento.
+* val_dataset: Conjunto de datos de validación.
+
 ## Variable objetivo
 
 La variable objetivo representa la clase a la que pertenece una imagen aérea determinada. El modelo baseline se entrena para predecir la etiqueta de clase correcta para una imagen dada.
@@ -28,11 +33,22 @@ Loss: Una medida del error promedio del modelo al hacer predicciones. Un valor d
 
 ### Resultados de evaluación
 
-Tabla que muestra los resultados de evaluación del modelo baseline, incluyendo las métricas de evaluación.
+| Métrica     | Valor   |
+|-------------|---------|
+| **Accuracy**| 0.9387  |
+| **Loss**    | 0.24    |
 
 ## Análisis de los resultados
 
-Descripción de los resultados del modelo baseline, incluyendo fortalezas y debilidades del modelo.
+El modelo baseline muestra un accuracy de 0.9387 y una pérdida de 0.24, lo cual indica un buen rendimiento general. El alto valor de accuracy sugiere que el modelo es capaz de clasificar correctamente una gran parte de las muestras, lo que es una fortaleza destacable, especialmente si se considera que se trata de un modelo entrenado con transfer learning, utilizando pesos preentrenados de EfficientNetB0.
+
+Sin embargo, aunque el modelo presenta buenos resultados, hay algunas áreas a considerar para mejorar su rendimiento:
+
+Posible sobreajuste: Aunque el accuracy es alto, la pérdida de 0.24 indica que el modelo podría beneficiarse de una mayor regularización o más entrenamiento en ciertos casos. La mejora de la generalización podría ser necesaria para asegurar que el modelo no se sobreajuste a los datos de entrenamiento.
+
+Necesidad de ajuste fino: Al usar transfer learning, el modelo comenzó con pesos preentrenados que podrían no estar completamente optimizados para el conjunto de datos específico. Descongelar algunas de las capas más profundas y realizar un ajuste fino adicional podría mejorar aún más los resultados, particularmente para tareas complejas.
+
+Optimización en el entrenamiento: podría ser beneficioso explorar otras combinaciones de hiperparámetros o técnicas adicionales como el data augmentation para mejorar la robustez del modelo.
 
 ## Conclusiones
 
@@ -44,8 +60,14 @@ El análisis de la métrica de pérdida resalta la eficacia de los modelos para 
 Finalmente, las conclusiones subrayan que **la calidad del conjunto de datos y el preprocesamiento son factores clave para el éxito del modelo**. Un conjunto de datos diverso y estrategias como el aumento de datos pueden mejorar la capacidad de los modelos para captar características complejas. Además, realizar un análisis de errores en las predicciones fallidas podría proporcionar información valiosa para refinar aún más los modelos. En general, el análisis sugiere que **EfficientNetB0 es la mejor arquitectura para la tarea**, pero hay margen de mejora en las otras alternativas.
 
 
-## Referencias
+Sin embargo, aunque los resultados son prometedores, existen áreas en las que se puede mejorar:
 
-Lista de referencias utilizadas para construir el modelo baseline y evaluar su rendimiento.
+Generalización: Aunque el modelo tiene un buen accuracy, la pérdida relativamente alta sugiere que podría haber espacio para mejorar la capacidad de generalización del modelo, reduciendo el sobreajuste. Estrategias adicionales como data augmentation o un mayor entrenamiento con regularización podrían ayudar a abordar este desafío.
 
-Espero que te sea útil esta plantilla. Recuerda que puedes adaptarla a las necesidades específicas de tu proyecto.
+Ajuste fino: Aunque se utilizaron capas congeladas durante el entrenamiento inicial, es posible que la descongelación parcial de capas adicionales y un ajuste fino más exhaustivo mejoren la precisión, especialmente en tareas de clasificación más complejas.
+
+Exploración de hiperparámetros: El rendimiento del modelo podría mejorarse aún más mediante la optimización de hiperparámetros, utilizando técnicas como búsqueda aleatoria o búsqueda en cuadrícula para encontrar la mejor configuración de parámetros para la tarea en cuestión.
+
+En resumen, el modelo baseline proporciona una excelente base para futuras mejoras, y su rendimiento podría optimizarse con técnicas de ajuste fino, regularización adicional y exploración más profunda de los hiperparámetros.
+
+

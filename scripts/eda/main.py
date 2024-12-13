@@ -1,5 +1,6 @@
 import structural_metrics
 import visual_metrics
+import split_data
 
 """
     se requiere que se ejecuten los scripts de data_acquisition (debe estar ubicado en ma_ml_proyecto\scripts\data_acquisition)
@@ -27,3 +28,5 @@ structural_metrics.execute(dataset_path)
         - Imagen de distribución de tonalidades en la carpeta data
 """
 visual_metrics.execute(dataset_path)
+
+split_data.execute
