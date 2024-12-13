@@ -4,14 +4,14 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
 
 # Define el directorio de destino
-base_dir = os.path.abspath('src/denseNet121/models')
+base_dir = os.path.abspath('src/ResNet50/models')
 
 # Cargar el modelo
-model_path = os.path.join(base_dir, 'denseNet121_tl_V1.h5')
+model_path = os.path.join(base_dir, 'ResNet50_tl_V1.h5')
 model = load_model(model_path)
 
 # Cargar el historial
-history_path = os.path.join(base_dir, 'denseNet121_tl_V1_history.json')
+history_path = os.path.join(base_dir, 'ResNet50_tl_V1_history.json')
 with open(history_path, 'r') as f:
     history_tl = json.load(f)
 
