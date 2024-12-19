@@ -33,22 +33,41 @@ Loss: Una medida del error promedio del modelo al hacer predicciones. Un valor d
 
 ### Resultados de evaluación
 
-| Métrica     | Valor   |
-|-------------|---------|
-| **Accuracy**| 0.9387  |
-| **Loss**    | 0.24    |
+![Resultado del modelo EfficientNetb0](../../src/test_metrics_efficientenetb0.png "Test - Resultados de EfficientNetB0")
+![Resultado del modelo DenseNet121](../../src/test_metrics_densenet121.png "Test - Resultados de DenseNet121")
+![Resultado del modelo DenseNet121](../../src/test_metrics_resnet50.png "Test - Resultados de DenseNet121")
 
 ## Análisis de los resultados
 
-El modelo baseline muestra un accuracy de 0.9387 y una pérdida de 0.24, lo cual indica un buen rendimiento general. El alto valor de accuracy sugiere que el modelo es capaz de clasificar correctamente una gran parte de las muestras, lo que es una fortaleza destacable, especialmente si se considera que se trata de un modelo entrenado con transfer learning, utilizando pesos preentrenados de EfficientNetB0.
+![Perdida y Precisión EfficientNetb0](../../src/test_result_efficientnetb0.png "Perdida y Precisión EfficientNetb0")
+![Resultado del modelo DenseNet121](../../src/test_result_densenet121.png "Perdida y Precisión DenseNet121")
+![Resultado del modelo DenseNet121](../../src/test_result_resnet50.png "Perdida y Precisión ResNet50")
+
+| Métrica     | Valor   |
+|-------------|---------|
+| **Accuracy**| 0.9613  |
+| **Loss**    | 0.1971  |
+
+## Análisis de los resultados
+
+El modelo baseline muestra un accuracy de 0.9613 y una pérdida de 0.1971, lo cual indica un buen rendimiento general. El alto valor de accuracy sugiere que el modelo es capaz de clasificar correctamente una gran parte de las muestras, lo que es una fortaleza destacable, especialmente si se considera que se trata de un modelo entrenado con transfer learning, utilizando pesos preentrenados de EfficientNetB0.
 
 Sin embargo, aunque el modelo presenta buenos resultados, hay algunas áreas a considerar para mejorar su rendimiento:
 
-Posible sobreajuste: Aunque el accuracy es alto, la pérdida de 0.24 indica que el modelo podría beneficiarse de una mayor regularización o más entrenamiento en ciertos casos. La mejora de la generalización podría ser necesaria para asegurar que el modelo no se sobreajuste a los datos de entrenamiento.
+Posible sobreajuste: Aunque el accuracy es alto, la pérdida de 0.1971 indica que el modelo podría beneficiarse de una mayor regularización o más entrenamiento en ciertos casos. La mejora de la generalización podría ser necesaria para asegurar que el modelo no se sobreajuste a los datos de entrenamiento.
 
 Necesidad de ajuste fino: Al usar transfer learning, el modelo comenzó con pesos preentrenados que podrían no estar completamente optimizados para el conjunto de datos específico. Descongelar algunas de las capas más profundas y realizar un ajuste fino adicional podría mejorar aún más los resultados, particularmente para tareas complejas.
 
 Optimización en el entrenamiento: podría ser beneficioso explorar otras combinaciones de hiperparámetros o técnicas adicionales como el data augmentation para mejorar la robustez del modelo.
+
+### Análisis del Modelo EfficientNetB0 para Clasificación de Imágenes Satelitales
+
+Al analizar los resultados detallados del modelo **EfficientNetB0** en la tarea de clasificación de imágenes satelitales, se evidencia un desempeño notable respaldado por métricas sólidas: una precisión (*Accuracy*) del **96.13%**, un **F1-Score** de **96.35%** y un **Recall** de **96.45%**. La consistencia de estos valores resalta la capacidad uniforme del modelo para clasificar de manera efectiva, acompañada de un valor de pérdida (*Loss*) bajo de **0.1971**, lo que sugiere una adecuada generalización.
+
+La **matriz de confusión** destaca que el modelo tiene un desempeño excepcional en ciertas categorías. Por ejemplo, las "Top 5 Clases Mejor Clasificadas" — *agricultural*, *airplane*, *baseballdiamond*, *beach* y *chaparral* — presentan resultados casi perfectos, lo que indica que estas clases poseen características visuales muy distintivas fácilmente identificables por el modelo. Además, la matriz muestra pocas confusiones entre categorías, con la mayoría de las predicciones concentradas en la diagonal principal.
+
+Por otro lado, el análisis de las "Top 5 Clases Peor Clasificadas" revela retos específicos en categorías como *denseresidential*, *mediumresidential*, y estructuras urbanas como *buildings*, *golfcourse* y *mobilehomepark*. Esto puede atribuirse a características visuales similares y patrones arquitectónicos compartidos que complican la diferenciación. A pesar de ello, incluso las categorías con menor desempeño mantienen tasas de precisión superiores al **65%**, lo cual es un logro destacable considerando que se trata de un problema de clasificación multiclase con **21 categorías diferentes**.
+
 
 ## Conclusiones
 
