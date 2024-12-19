@@ -1,0 +1,6 @@
+artifact_location: file:///Users/diego.ferro/ma_ml_proyecto/src/efficientnetb0/training/mlruns/642550083456535440
+creation_time: 1734448452784
+experiment_id: '642550083456535440'
+last_update_time: 1734448452784
+lifecycle_stage: active
+name: EfficientNetB0_Hyperparameter_Optimization_02
