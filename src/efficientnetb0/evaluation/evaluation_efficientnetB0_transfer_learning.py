@@ -1,7 +1,13 @@
 import os
 import json
 import matplotlib.pyplot as plt
+import tensorflow as tf
 from tensorflow.keras.models import load_model
+
+OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../data/processed"))
+TEST_DIR = os.path.join(OUTPUT_DIR, "test_ds")
+
+test_ds = tf.data.experimental.load(TEST_DIR)
 
 # Define el directorio de destino
 base_dir = os.path.abspath('src/efficientnetb0/models')
@@ -14,6 +20,10 @@ model = load_model(model_path)
 history_path = os.path.join(base_dir, 'efficientnetb0_tl_V1_history.json')
 with open(history_path, 'r') as f:
     history_tl = json.load(f)
+    
+test_loss, test_acc = model.evaluate(test_ds)
+print(f"Test accuracy ENBM: {test_acc}")
+print(f"Test loss ENBM: {test_loss}")
 
 plt.figure(figsize=(12, 4))
 
@@ -36,3 +46,5 @@ plt.legend()
 plt.title('Pérdida en Entrenamiento y Validación')
 
 plt.show()
+
+

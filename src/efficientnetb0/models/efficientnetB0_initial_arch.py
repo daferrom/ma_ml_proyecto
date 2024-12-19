@@ -6,6 +6,8 @@ import tensorflow as tf
 ## Definición de la arquitectura de EfficientNEtB= para entrenamiento con transfer learning
 
 def train_efficientnetB0_with_transfer_learning(input_shape , num_classes, train_dataset, val_dataset):
+    print("Start execution train_efficientnetB0_with_transfer_learning")
+    
     # Definir explícitamente la entrada
     input_layer = Input(shape=input_shape)
 
@@ -49,7 +51,7 @@ def train_efficientnetB0_with_transfer_learning(input_shape , num_classes, train
     model_sup.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=1e-5),
                 loss='sparse_categorical_crossentropy',
                 metrics=['accuracy'])
-
+    print("Training EfficientNetB0 with transfer learning...")
     # Entrenar el modelo descongelado
     history_enB0_tranfer_learning = model_sup.fit(train_dataset, epochs=10, validation_data=val_dataset)
 
