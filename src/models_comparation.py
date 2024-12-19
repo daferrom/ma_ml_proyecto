@@ -281,14 +281,14 @@ def compare_models_basic(train_ds, val_ds, num_classes, input_shape):
         
 
         reduce_lr = ReduceLROnPlateau(
-            monitor='val_accuracy', 
+            monitor='val_accuracy',
             factor=0.2,
             patience=3,
             min_lr=0.000005
         )
         
         early_stopping = EarlyStopping(
-            monitor='val_accuracy', 
+            monitor='val_accuracy',
             patience=7,
             restore_best_weights=True
         )

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/diego.ferro/ma_ml_proyecto/src/efficientnetb0/training/mlruns/805139465307003629/010db41aa5cb468f897908e318dc918e/artifacts
+end_time: 1734565410102
+entry_point_name: ''
+experiment_id: '805139465307003629'
+lifecycle_stage: active
+run_id: 010db41aa5cb468f897908e318dc918e
+run_name: Hyperparameter_Tuning_Exploration
+run_uuid: 010db41aa5cb468f897908e318dc918e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734563869320
+status: 4
+tags: []
+user_id: diego.ferro
