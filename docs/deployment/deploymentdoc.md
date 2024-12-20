@@ -231,60 +231,69 @@ RAILWAY_SERVICE_ID
 - **Instrucciones de instalación:** 
 
 ### 1. Para clonar el repositorio ejecutar en la terminal: :
+
 ```bash
 git clone https://github.com/daferrom/ma_ml_proyecto.git
 
 cd ma_ml_proyecto
+```
 
 ### 2. Configurar el entorno virtual de python (3.9.21) Para crear el entorno virtual ejecutar en la terminal:
 
 ```bash
 python3 -m venv venv
+```
 
 ### 3. Activar el entorno virtual , ejecutar 
 
 ```bash
 source venv/bin/activate
+```
 
 ### 3. Isntalar las dependencias 
 
 ```bash
 pip3 install -r requirements.txt
+```
 
 ### 4. Configura las claves y credenciales necesarias en Railway o localmente en un archivo .env.
 
 PORT=3001
 
 ### 5. Navega a deploy en el repo de despliegue clonado o a deploy_repo en este
-
+```bash
 cd scripts/deploy_repo
+```
 
 ### 6 Inicia el servidor de la API con uvicorn (Opcional)
 
+```bash
 uvicorn main:app --host 0.0.0.0 --port $PORT
+```
 
 ### 7 navegar en otra terminal manteniendo el entorno virtual activado
-
+```bash
 cd scripts/evaluate/
+```
 
 ### 8 Reemplazar la ruta de la imagen en el image_path por una cualquiera local.
 
 ### 9 (si se esta usando el servidor local) reemplazar en  model_path = "https://0.0.0.0:3001" en deploy_test.py
 
 
-- **Instrucciones de configuración:** (instrucciones detalladas para configurar el modelo en la plataforma de despliegue)
+- **Instrucciones de configuración:** 
 
-configurar un solo repositorio para despliegue
-crear un archivo main.py que contenga las rutas de los endpoints del API del modelo a desplegar
-copiar el modelo en formato keras (save model) en la carpeta de deploy
-reemplazar el path eal pmodelo en la linea 12 de main de "load_model()"
-verificar que requirements.txt del deploy coincida con requirements.txt del repo de creacion ,exploración de hiperparametros y entrenamiento.
-vericar y ajustar la configuracion de railway.json segun necesidades de despliegue.
-actualizr el repositorio remotos con los cambios.
-conectar railway al repositorio remoto.
+Configurar un solo repositorio para despliegue
+Crear un archivo main.py que contenga las rutas de los endpoints del API del modelo a desplegar
+Copiar el modelo en formato keras (save model) en la carpeta de deploy
+Reemplazar el path eal pmodelo en la linea 12 de main de "load_model()"
+Cerificar que requirements.txt del deploy coincida con requirements.txt del repo de creacion ,exploración de hiperparametros y entrenamiento.
+Vericar y ajustar la configuracion de railway.json segun necesidades de despliegue.
+Actualizar el repositorio remotos con los cambios.
+Conectar railway al repositorio remoto.
 Desplegar desde railway (este proceso esta automatizado en es plataforma)
 
-- **Instrucciones de uso:** (instrucciones detalladas para utilizar el modelo en la plataforma de despliegue)
+- **Instrucciones de uso:** 
 
 Para ejecutar el modelo en la plataforma de despliegue solo de debe correr su build proces y para probarlo se ejecuta el script de scripts/evaluate/deploy_test.py mencionado anteriormente
 
