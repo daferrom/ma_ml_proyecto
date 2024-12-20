@@ -9,25 +9,26 @@ Hardware:
 Processador Apple M2 Pro o GPU NVIDIA Tesla T4
 Memoria RAM recomendada: 32 GB
 Memoria RAM mínima: 12GB
-Almacenamiento: SSD para guradar datsets y checkpoints del mejor modelo con los mejores hipermparámetros.
+Almacenamiento: SSD para guardar datasets y checkpoints del mejor modelo con los mejores hipermparámetros.
 
 Software:
 
-Tensoflow | 2.18.0
-Keras ! 3.7.0
+| Tensoflow | 2.18.0 |
+| Keras | 3.7.0 |
 
 Librerias adicionales
 
-Entrenamiento
-keras_tuner | 1.4.7
-mlflow | 2.19.0
-numpy | 2.0.2
-pandas | 2.2.3
-matplotlib | 3.9.4
+Entrenamiento:
+
+| keras_tuner | 1.4.7 |
+| mlflow | 2.19.0 |
+| numpy | 2.0.2 |
+| pandas | 2.2.3 |
+| matplotlib | 3.9.4 |
 
 Plataforma:
 
-Local: Usar Apple MAc book pro
+Local: Usar Apple Mac book pro
 Cloud: Google colab Pro
 
 
