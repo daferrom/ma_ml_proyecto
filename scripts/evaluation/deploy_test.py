@@ -3,9 +3,9 @@ import os
 
 ## Ejecutando este script devuelve la clase predicha y la lista de probablilidades en eun JSON
 
-model_url = "https://mamldeploy-production.up.railway.app/predict-land-use/" # Agregue acá la url de railway
+model_url = "https://mamldeploy-production.up.railway.app/predict-land-use/" 
 
-# Ruta al archivo de imagen que deseas enviar
+# Ruta al archivo de imagen que deseas enviar , se puede cambiar aqui por una imagen cualquiera ##
 image_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../data/images_converted/buildings/buildings06.jpg"))
 
 def make_image_prediction(file_path, url):
