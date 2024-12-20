@@ -13,22 +13,23 @@ Almacenamiento: SSD para guradar datsets y checkpoints del mejor modelo con los 
 
 Software:
 
-Tensoflow | 2.18.0
-Keras ! 3.7.0
+| Tensoflow | 2.18.0 |
+| Keras | 3.7.0 |
 
 Librerias adicionales
 
-Entrenamiento
-keras_tuner | 1.4.7
-mlflow | 2.19.0
-numpy | 2.0.2
-pandas | 2.2.3
-matplotlib | 3.9.4
+Entrenamiento:
+
+| keras_tuner | 1.4.7 |
+| mlflow | 2.19.0 |
+| numpy | 2.0.2 |
+| pandas | 2.2.3 |
+| matplotlib | 3.9.4|
 
 Plataforma:
 
-Local: Usar Apple MAc book pro
-Cloud: Google colab Pro
+* Local: Apple Mac book pro
+* Cloud: Google colab Pro
 
 
 - **Nombre del modelo:** best_efficiennet_model_v3
@@ -39,8 +40,6 @@ Cloud: Google colab Pro
     url API desplegada : "https://mamldeploy-production.up.railway.app/predict-land-use/"
 
 - **Requisitos técnicos:** 
-
- (lista de requisitos técnicos necesarios para el despliegue, como versión de Python, bibliotecas de terceros, hardware, etc.)
 
 La maquina virtual del depsliegue en railway tiene una especificación de 2 vCPU and 512 MB con una imagen de linux ubuntu en un contenedor de Docker:
 
