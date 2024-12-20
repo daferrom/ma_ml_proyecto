@@ -233,23 +233,26 @@ RAILWAY_SERVICE_ID
 ### 1. Para clonar el repositorio ejecutar en la terminal: :
 ```bash
 git clone https://github.com/daferrom/ma_ml_proyecto.git
-
 cd ma_ml_proyecto
+```
 
 ### 2. Configurar el entorno virtual de python (3.9.21) Para crear el entorno virtual ejecutar en la terminal:
 
 ```bash
 python3 -m venv venv
+```
 
 ### 3. Activar el entorno virtual , ejecutar 
 
 ```bash
 source venv/bin/activate
+```
 
 ### 3. Isntalar las dependencias 
 
 ```bash
 pip3 install -r requirements.txt
+```
 
 ### 4. Configura las claves y credenciales necesarias en Railway o localmente en un archivo .env.
 
@@ -257,20 +260,25 @@ PORT=3001
 
 ### 5. Navega a deploy en el repo de despliegue clonado o a deploy_repo en este
 
+```bash
 cd scripts/deploy_repo
+```
 
 ### 6 Inicia el servidor de la API con uvicorn (Opcional)
 
+```bash
 uvicorn main:app --host 0.0.0.0 --port $PORT
+```
 
 ### 7 navegar en otra terminal manteniendo el entorno virtual activado
 
+```bash
 cd scripts/evaluate/
+```
 
 ### 8 Reemplazar la ruta de la imagen en el image_path por una cualquiera local.
 
 ### 9 (si se esta usando el servidor local) reemplazar en  model_path = "https://0.0.0.0:3001" en deploy_test.py
-
 
 - **Instrucciones de configuración:** (instrucciones detalladas para configurar el modelo en la plataforma de despliegue)
 
